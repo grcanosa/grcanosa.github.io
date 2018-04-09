@@ -23,8 +23,13 @@ description: Programming goodies and other tech-related stuff.
 
 # List of links in the navigation bar
 navbar-links:
+  Home: ""
+  Blog: "pages/blog/"
   About Me: "pages/aboutme"
-  CV: "pages/cv"
+  CV: 
+    - Experience: "pages/cv#professional-experience"
+    - Education: "pages/cv#education"
+    - Skills: "pages/cv#technical-skills"
 #  Resources:
 #    - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
 #    - Learn markdown: "http://www.markdowntutorial.com/"
@@ -57,7 +62,7 @@ footer-link-col: "#404040"
 # Alternatively, the navbar, footer, and page background can be set to use background images
 # instead of colour
 
-# navbar-img: "/img/bgimage.png"
+navbar-img: "/static/img/bgimage.png"
 # footer-img: "/img/bgimage.png"
 # page-img: "/img/bgimage.png"
 
@@ -94,11 +99,11 @@ social-network-links:
 
 # Select which share links to show in posts
 share-links-active:
-  twitter: false
   facebook: false
   google: false
   linkedin: true
-  github: true
+  twitter: true
+
 
 # How to display the link to the website in the footer
 # Remove this if you don't want a link in the footer
@@ -130,7 +135,7 @@ url-pretty: "grcanosa.com"  # eg. "deanattali.com/beautiful-jekyll"
 
 # Excerpt Word Length
 # Truncates the excerpt to the specified number of words on the index page
-excerpt_length: 50
+excerpt_length: 100
 
 # Character used to separate site title and description in HTML document title
 # and RSS feed title
@@ -144,6 +149,8 @@ markdown: kramdown
 highlighter: rouge
 permalink: /:year-:month-:day-:title/
 paginate: 5
+
+paginate_path: "pages/blog/page:num/"
 
 kramdown:
   input: GFM
@@ -182,7 +189,7 @@ exclude:
 # prose.io config
 prose:
   rooturl: '_posts'
-  media: 'img'
+  media: 'static/img'
   ignore:
     - 404.html
     - LICENSE
