@@ -1,0 +1,14 @@
+- name: Software development
+  list:
+    - name: C++
+      level: 5
+      description: Large experience in different projects with multiple libraries (Boost, OpenCV, STL, C++11). Experience with performance improvements techniques and profilers tools. 
+    - name: Python
+      level: 5
+      description: Experience with different multi-purposes modules. Object oriented programming. Experience with data analytics libraries such as pandas, numpy, matplotlib, seaborn, bokeh, folium.
+    - name: Other
+      level: 4
+      description: Scala, C#, Java, SQL, bash, batch
+    - name: Programming
+      level: 5
+      description: Great experience in Object Oriented Programming, concurrency and multithreading issues. Experience in Functional Programming. UML design. Qt GUIs.
