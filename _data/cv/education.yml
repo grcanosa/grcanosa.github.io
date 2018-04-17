@@ -37,8 +37,8 @@ selfeducation:
       Using Scala to analyze data sets small to large; from parallel programming on multicore architectures, to distributed programming on a cluster using Apache Spark. Completed 2 of the 5 courses.
       - [x] Functional Programming Principles in Scala.
       - [x] Functional Program Design in Scala.
-      - [ ] Parallel Programming (in process).
+      - [ ] Parallel Programming (in progress).
       - [ ] Big Data Analysis with Scala and Spark (in progress).
   - course: Managing Big Data with MySQL
     link: https://www.coursera.org/learn/analytics-mysql
-    description: 
+    description: Execute the most useful query and table aggregation statements for business analysts, and practice using them with real databases.
