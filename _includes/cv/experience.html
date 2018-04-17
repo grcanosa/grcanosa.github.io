@@ -1,0 +1,35 @@
+<div class="row" markdown="1">
+{:.col-lg-offset-3}
+# Professional Experience
+---
+</div>
+{% for section in site.data.cv.experience %}
+<div class="row" markdown="1">
+{:.col-lg-offset-3}
+## {{ section.name }}
+</div>
+
+{% for work in section.list %}
+<div class="row" markdown="1">
+{:.col-lg-3 .vcenter .text-right}
+#### ```{{ work.years }}```
+
+{:.col-lg .vcenter}
+####  {{ work.position }} @ {{ work.company }} <i class="fa fa-globe fa-lg"></i> {{ work.city }}.
+</div>
+<div class="row"> <div class="col-lg-offset-3" markdown="1">
+
+{{ work.description }}
+
+{% if work.skills %}
+> Skills: {{ work.skills }}
+{% endif %}
+
+{% if work.projects %}
+> Projects: {{ work.projects }}
+{% endif %}
+</div>
+</div>
+
+{% endfor %}
+{% endfor %}

@@ -29,26 +29,26 @@
       skills: C++, Boost, ROS, OpenCV, PCL, Linux
       projects: ROTOS
     - years: Sep 2011 - Dec 2011
-      company: Robotics Research Group (UoA)
+      company: Robotics Research Group (Uni of Auckland)
       city: Auckland, New Zealand
       position: Visiting Researcher
       description: Dynamic object detection system from UAV based on optical flows differences, supervised by Dr. Bruce MacDonald
       skills: OpenCV, C++
     - years: May 2008 - Aug 2008
       position: Trainee Engineer
-      company: Flight Science Department, Bombardier
+      company: Flight Science Dept, Bombardier
       city: Montreal, Canada
       description: GUI-based application to optimize the documentation process of simulation and testing reports.
       skills: Matlab
 - name: Scholarship and Grants
   list:
     - years: Feb 2008 - Apr 2008
-      company: Transportation Engineer Dept. (Uni. of Seville)
+      company: Transportation Dept. (Uni. of Seville)
       city: Seville, Spain
       position: Research Scholarship
       description: Study of the CANBUS devices, protocols and data in different automobiles.
     - years: Nov 2007 - Jan 2008
-      company: Automatic and Systems Engineering Dept (Uni of Seville)
+      company: Automatic and Systems Dept (Uni of Seville)
       city: Seville, Spain
       position: Final Degree Project
       description: Transportation and storage problem resolution using centralized control algorithms.

@@ -1,57 +1,15 @@
 ---
-layout: page
+layout: page-cv
 title: CV
 subtitle: 
 ---
 
 
-# Professional Experience
+{% include cv/experience.html %}
 
-{% for section in site.data.cv.experience %}
+{% include cv/skills.html %}
 
-## {{ section.name }}
+{% include cv/education.html %}
 
-{% for work in section.list %}
+{% include cv/language.html %}
 
-
-
-### `{{ work.years }}` {{ work.position }}
-
-<i class="fa fa-building fa-lg"></i> {{ work.company }} 
-<i class="fa fa-globe fa-lg"></i>   {{ work.city }}
-
-{{ work.description }}
-
-{% if work.skills %}
-> Skills: {{ work.skills }}
-{% endif %}
-
-{% if work.projects %}
-> Projects: {{ work.projects }}
-{% endif %}
-
-{% endfor %}
-{% endfor %}
-
----
-# Technical Skills
-
-
----
-# Education
-
-{% for education in site.data.cv.education  %}
-### `{{ education.years }}` {{education.degree}} 
-
-<i class="fa fa-university fa-lg"></i> {{ education.university }} 
-<i class="fa fa-globe fa-lg"></i>   {{ education.city }}
-
-
-{% endfor%}
-
----
-## Contact
-
-[gonzalo@granosa.com](mailto:gonzalo@grcanosa.com)
-
-[grcanosa@gmail.com](mailto:grcanosa@gmail.com)

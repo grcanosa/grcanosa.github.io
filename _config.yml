@@ -28,8 +28,9 @@ navbar-links:
   About Me: "pages/aboutme"
   CV: 
     - Experience: "pages/cv#professional-experience"
-    - Education: "pages/cv#education"
     - Skills: "pages/cv#technical-skills"
+    - Education: "pages/cv#education"
+    - Languages: "pages/cv#languages"
 #  Resources:
 #    - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
 #    - Learn markdown: "http://www.markdowntutorial.com/"
