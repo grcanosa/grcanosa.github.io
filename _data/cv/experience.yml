@@ -1,0 +1,54 @@
+- name: Working
+  list:
+    - years: Mar 2015 - Now
+      company: SEPSA
+      city: Pinto (Madrid, Spain)
+      position: Senior Development Engineer
+      description: |
+        Multiple technologies integration and software development for projects in the Railway Industry; i.e., CCTV systems or passenger information and entertainment systems.
+        - Software design and implementation for a NVR (Network Video Recorder) used in aboveground and underground trains. 
+        - Design and development of on-board automatic diagnostics for different systems in the train. C++11
+        - Design and development of graphical interfaces for the end-clients. Qt, OpenGL
+        - Testing and validation of computer vision solutions for abandoned objects detection.
+        - Technical support for different departments of the company (PC applications, sales, project managers...)
+        - Scrum methodologies used for faster and leaner software development and production.
+        - Development of hours tracking tools for internal use to monitor the project progress. Based on redmine and develop on redmine and developed using python, jupyter notebooks and pandas.
+      skills: C++ (98/11), Python, Bash, Linux, Javascript,  
+      projects: Civia for Alstom/RENFE, Mexico Metro for CAF, New York Metro North Railways, Toluca Metro, Guadalajara Metro, GreenLine Metro, Maryland Metro    
+    - years: Feb 2014 - Feb 2015
+      company: eProsima
+      city: Tres Cantos (Madrid, Spain)
+      position: Senior Development Engineer
+      description: I was the main developer of an open-source high-performance C++ implementation of the RTPS (Real-Time Publish Subscription) standard of the OMG (www.omg.org). This protocol was designed to manage communications in publish-subscribe frameworks. I also contributed to the writing of the proposal of European Projects. I received a Torres-Quevedo grant from the European Social Funds. I also generated different GUI-applications using the Fast RTPS product I developed.
+      skills: C++, Boost, Asio, Eclipse, Bash, Bat, Windows, Linux
+    - years: Feb 2009 - Nov 2013
+      company: Robotics and Cybernetics Group
+      city: Madrid, Spain
+      position: PhD Researcher
+      description: MultiRobot Systems for security and surveillance in Critical Infrastructures  
+      skills: C++, Boost, ROS, OpenCV, PCL, Linux
+      projects: ROTOS
+    - years: Sep 2011 - Dec 2011
+      company: Robotics Research Group (Uni of Auckland)
+      city: Auckland, New Zealand
+      position: Visiting Researcher
+      description: Dynamic object detection system from UAV based on optical flows differences, supervised by Dr. Bruce MacDonald
+      skills: OpenCV, C++
+    - years: May 2008 - Aug 2008
+      position: Trainee Engineer
+      company: Flight Science Dept, Bombardier
+      city: Montreal, Canada
+      description: GUI-based application to optimize the documentation process of simulation and testing reports.
+      skills: Matlab
+- name: Scholarship and Grants
+  list:
+    - years: Feb 2008 - Apr 2008
+      company: Transportation Dept. (Uni. of Seville)
+      city: Seville, Spain
+      position: Research Scholarship
+      description: Study of the CANBUS devices, protocols and data in different automobiles.
+    - years: Nov 2007 - Jan 2008
+      company: Automatic and Systems Dept (Uni of Seville)
+      city: Seville, Spain
+      position: Final Degree Project
+      description: Transportation and storage problem resolution using centralized control algorithms.

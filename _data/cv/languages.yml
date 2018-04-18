@@ -1,0 +1,11 @@
+- language: Spanish
+  level: 5
+  description: Native language
+- language: English
+  level: 4
+  description: Full proffesional competence
+  degree: High written and spoken level
+- language: German
+  level: 3
+  description: Basic proffesional competence
+  degree: Zentrale MittelstuffePrüfung of the Goethe Institut (C1).
