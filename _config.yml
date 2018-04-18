@@ -148,7 +148,7 @@ title-separator: "-"
 timezone: "Spain/Madrid"
 markdown: kramdown
 highlighter: rouge
-permalink: /:year-:month-:day-:title/
+permalink: /post/:year-:month-:day-:title/
 paginate: 5
 
 paginate_path: "pages/blog/page:num/"
@@ -186,6 +186,7 @@ exclude:
   - LICENSE
   - README.md
   - Vagrantfile
+  - launch_docker.sh
 
 # prose.io config
 prose:
