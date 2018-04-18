@@ -4,21 +4,37 @@
 ---
 </div>
 {% for section in site.data.cv.experience %}
-<div class="row" markdown="1">
-{:.col-lg-offset-3}
-## {{ section.name }}
+<div class="row">
+<h2 class="col-lg-offset-3">{{section.name}}</h2>
 </div>
-
+<div class="panel-group" id="accordion-{{section.name | downcase | remove: ' '}}" role="tablist" aria-multiselectable="true">
 {% for work in section.list %}
-<div class="row" markdown="1">
-{:.col-lg-3 .vcenter .text-right}
-#### ```{{ work.years }}```
+<div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="heading-{{section.name | downcase | remove: ' '}}-{{forloop.index}}">
+        <div class="panel-title row">
+          
+         <a role="button" data-toggle="collapse" data-parent="#accordion-{{section.name | downcase | remove: ' '}}" href="#collapse-{{section.name | downcase | remove: ' '}}-{{forloop.index}}" aria-expanded="false" aria-controls="collapse-{{section.name | downcase | remove: ' '}}-{{forloop.index}}">
 
-{:.col-lg .vcenter}
-####  {{ work.position }} @ {{ work.company }} <i class="fa fa-globe fa-lg"></i> {{ work.city }}.
+    <h4 class="col-lg-3 vcenter text-right"><code>{{work.years}}</code></h4>
+<h4 class="col-lg-6 vcenter text-left">{{ work.position }} @ {{ work.company | markdownify | remove: '<p>' | remove: '</p>'}}</h4> 
+<h4 class="col-lg-2 vcenter text-left"><i class="fa fa-globe fa-lg"></i> {{ work.city }}</h4>
+</a>
+
 </div>
-<div class="row"> <div class="col-lg-offset-3" markdown="1">
-
+</div>
+<div id="collapse-{{section.name | downcase | remove: ' '}}-{{forloop.index}}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-{{section.name | downcase | remove: ' '}}-{{forloop.index}}">
+    <div class="panel-body row">
+  {% if work.links %}
+<div class="col-lg-3 vcenter">
+  {% for liinfo in work.links %}
+<h5><a class="panel-title" href="{{liinfo.link}}"><i class="fa fa-link fa-lg"></i> {{liinfo.name}}</a><br></h5>
+{% endfor %}
+</div>
+<div class="col-lg-8 vcenter" markdown="1">
+{% else %}
+<div class="col-lg-offset-3 col-lg-8 vcenter" markdown="1">
+{% endif %}
+  
 {{ work.description }}
 
 {% if work.skills %}
@@ -30,6 +46,8 @@
 {% endif %}
 </div>
 </div>
-
+</div>
+</div>
 {% endfor %}
+</div>
 {% endfor %}
