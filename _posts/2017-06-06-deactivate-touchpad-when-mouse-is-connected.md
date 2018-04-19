@@ -1,6 +1,7 @@
 ---
 layout: post
-title: Deactivating touchpad when an external mouse is connected Ubuntu 16.04 
+subtitle: When an external mouse is connected Ubuntu 16.04 
+title: Deactivating touchpad
 tags: [setup,xps13,ubuntu]
 comments: false
 ---
