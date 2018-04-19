@@ -5,7 +5,15 @@
     institution: Technical University of Madrid
     num_years: 4
     city: Madrid
-    description: 
+    skills: Mobile robotics, Simulation, Webots, ROS, PCL, OpenCV, C++.
+    links:
+      - link: https://www.dropbox.com/s/tn7ooep4quv1nvl/PhD.GonzaloRCanosa.HR.4oct.pdf
+        name: Download Thesis.
+    description: |
+      #### Thesis info
+      - *Title:* Detection and Tracking of Dynamic Objects. A MultiRobot Approach to Critical Infrastructures Surveillance.
+      - *Advisors:* Advisors Jaime del Cerro and Antonio Barrientos.
+      - *Description:* My thesis was focused in MultiRobot Systems for security and surveillance of Exterior Critical Infrastructures (CI). I have developed detection of dynamic objects algorithms for both aerial and ground robots. A Point Cloud based robot localization system has also been developed. 
   - years: 2008 - 2010
     position: MSc in Automatics and Robotics
     institution: Technical University of Madrid

@@ -1,8 +1,7 @@
 {% capture id %}{{include.section.name | downcase | remove: ' '}}{%endcapture%}
 {%if include.use_name == 'true' %}
 <div class="row">
-    <div class="col-lg-3"></div>
-    <h2 class="col-lg-9">{{include.section.name}}</h2>
+    <h3 class=" col-lg-offset-3 col-lg-9">{{include.section.name}}</h3>
 </div>
 {% endif %}
 <div class="panel-group" id="accordion-{{id}}" role="tablist" aria-multiselectable="true">
@@ -14,21 +13,25 @@
                     <h4 class="col-lg-3 vcenter text-right">
                         <code>{{info.years}}</code>
                     </h4>
-                    <h4 class="col-lg-6 vcenter text-left">
-                        {{ info.position }} @ {{ info.institution | markdownify | remove: '<p>' | remove: '</p>'}}
+                    <h4 class="col-lg-8 vcenter text-left">
+                        {{ info.position }} <small>@ {{ info.institution | markdownify | remove: '<p>' | remove: '</p>'}}</small>
                     </h4> 
-                    {% if info.city %}
-                    <h4 class="col-lg-2 vcenter text-left">
-                        <i class="fa fa-globe fa-lg"></i> {{ info.city }}
-                    </h4>
-                    {% endif %}
+                    
                 </a>
             </div>
         </div>
         <div id="collapse-{{id}}-{{forloop.index}}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-{{id}}-{{forloop.index}}">
             <div class="panel-body row">
-                {% if info.links %}
+                {% if info.links or info.city %}
                 <div class="col-lg-3 vcenter">
+                    {% if info.city %}
+                    <h5>
+                        <i class="fa fa-globe fa-lg"></i> {{ info.city }}
+                    </h5>
+                    {% if info.city and info.links%}
+                    <hr>
+                    {% endif %}
+                    {% endif %}
                     {% for liinfo in info.links %}
                     <h5>
                         <a class="panel-title" href="{{liinfo.link}}">

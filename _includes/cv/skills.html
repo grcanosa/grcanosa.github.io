@@ -1,5 +1,11 @@
-<div class="row" markdown="1">
-{:.col-lg-offset-3}
-# Technical Skills
----
+<div class="row">
+    <div class="col-lg-9 col-lg-offset-3">
+        <h1 id="education">Skills</h1>
+    </div>
 </div>
+{% for section in site.data.cv.skills %}
+<div class="row">
+    <h3 class="col-lg-9 col-lg-offset-3">{{section.name}}</h3>
+</div>
+{% endfor %}
+<hr>
