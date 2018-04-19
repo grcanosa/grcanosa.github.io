@@ -6,7 +6,7 @@ layout: base
 
 <div class="container" role="main">
   <div class="row">
-    
+    <div class="col-lg-11 col-lg-offset-1 col-md-11 col-md-offset-2">
       {{ content }}
       
 	    {% if page.comments %}
@@ -14,6 +14,6 @@ layout: base
 	        {% include disqus.html %}
         </div>
 	    {% endif %}
-   
+   </div>
   </div>
 </div>
