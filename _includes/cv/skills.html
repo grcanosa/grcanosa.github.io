@@ -7,5 +7,14 @@
 <div class="row">
     <h3 class="col-lg-9 col-lg-offset-3">{{section.name}}</h3>
 </div>
+<div class="row">
+    {% for skill in section.list%}
+ <div class="progress col-lg-2">
+  <div class="progress-bar" role="progressbar" style="width:{{skill.level}}%">
+  </div>
+</div>   
+<div class="col-lg-2">    {{skill.name}}</div>
+    {% endfor%}
+</div>
 {% endfor %}
 <hr>

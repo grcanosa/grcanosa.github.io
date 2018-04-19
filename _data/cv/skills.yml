@@ -1,11 +1,17 @@
 - name: Programming languages
   list:
-    - name: C++
+    - name: C++ (98/11/14)
+      level: 5
     - name: Python
+      level: 5
     - name: Scala
+      level: 3
     - name: Javascript
+      level: 3
     - name: PHP
-    - name:
+      level: 3
+    - name: Java
+      level: 3
 - name: Software development
   list:
     - name: C++

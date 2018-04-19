@@ -1,7 +1,7 @@
 {% capture id %}{{include.section.name | downcase | remove: ' '}}{%endcapture%}
 {%if include.use_name == 'true' %}
 <div class="row">
-    <h3 class=" col-lg-offset-3 col-lg-9">{{include.section.name}}</h3>
+    <h3 class="col-lg-offset-3 col-lg-9">{{include.section.name}}</h3>
 </div>
 {% endif %}
 <div class="panel-group" id="accordion-{{id}}" role="tablist" aria-multiselectable="true">
@@ -13,7 +13,7 @@
                     <h4 class="col-lg-3 vcenter text-right">
                         <code>{{info.years}}</code>
                     </h4>
-                    <h4 class="col-lg-8 vcenter text-left">
+                    <h4 class="col-lg vcenter text-left">
                         {{ info.position }} <small>@ {{ info.institution | markdownify | remove: '<p>' | remove: '</p>'}}</small>
                     </h4> 
                     
@@ -41,9 +41,9 @@
                     </h5>
                     {% endfor %}
                 </div>
-                <div class="col-lg-8 vcenter" >
+                <div class="col-lg vcenter" >
                 {% else %}
-                <div class="col-lg-offset-3 col-lg-8 vcenter" >
+                <div class="col-lg-offset-3 col-lg vcenter" >
                 {% endif %}
 {{ info.description | markdownify}}
                     {% if info.skills %}
