@@ -1,44 +1,60 @@
-formal:
+- name: Education
+  list:
   - years: 2009 - 2013
-    degree: PhD in Robotics and Automatics
-    university: Technical University of Madrid
+    position: PhD in Robotics and Automatics
+    institution: Technical University of Madrid
     num_years: 4
-    city: Madrid, Spain
+    city: Madrid
+    description: 
   - years: 2008 - 2010
-    degree: MSc in Automatics and Robotics
-    university: Technical University of Madrid
+    position: MSc in Automatics and Robotics
+    institution: Technical University of Madrid
     num_years: 2
-    city: Madrid, Spain
+    city: Madrid
   - years: 2006 - 2007
-    degree: Erasmus
-    university: Royal Institute of Technology (KTH)
-    city: Stockholm, Sweden
+    position: Erasmus
+    institution: Royal Institute of Technology (KTH)
+    city: Stockholm
     num_years: 1
   - years: 2002 - 2008
-    university: University of Seville
-    city: Seville, Spain
-    degree: MSc in Systems and Automatics Engineering - BSc in Industrial Engineering
+    institution: University of Seville
+    city: Seville
+    position: MSc in Systems and Automatics Engineering - BSc in Industrial Engineering
     num_years: 5
   - years: 2000 -2002
-    university: High-School Martínez Montañes
-    degree: Secondary Education - International Baccalaureate Organization (IBO) Diploma
-    city: Seville, Spain
+    institution: High-School Martínez Montañes
+    position: Secondary Education - International Baccalaureate Organization (IBO) Diploma
+    city: Seville
   - years: 1988 - 2000
-    university: German School Albrecht Dürer
-    degree: Primary Education
-    city: Seville, Spain
-selfeducation:
-  - course: Python mega course
-    link: https://www.udemy.com/the-python-mega-course/
-    description: Building 10 real-world applications. Python course covering web, databases, web scraping, data science, web visualizations, image processing.
-  - course: Functional Programming in Scala Specialization
-    link: https://www.coursera.org/specializations/scala
+    institution: German School Albrecht Dürer
+    position: Primary Education
+    city: Seville
+- name: Self Education
+  list: 
+  - position: Functional Programming in Scala
+    institution: Coursera
+    years: Nov 2017
+    links:
+    - link: https://www.coursera.org/specializations/scala
+      name: Scala specialization
     description: |
       Using Scala to analyze data sets small to large; from parallel programming on multicore architectures, to distributed programming on a cluster using Apache Spark. Completed 2 of the 5 courses.
       - [x] Functional Programming Principles in Scala.
       - [x] Functional Program Design in Scala.
       - [ ] Parallel Programming (in progress).
-      - [ ] Big Data Analysis with Scala and Spark (in progress).
-  - course: Managing Big Data with MySQL
-    link: https://www.coursera.org/learn/analytics-mysql
+      - [ ] Big Data Analysis with Scala and Spark (in progress).    
+  - position: Python mega course
+    institution: Udemy
+    years: Sep 2017
+    links:
+    - link: https://www.udemy.com/the-python-mega-course/
+      name: Python mega course
+    description: Building 10 real-world applications. Python course covering web, databases, web scraping, data science, web visualizations, image processing.
+
+  - position: Managing Big Data with MySQL
+    institution: Coursera
+    years: Jun 2017
+    links:
+    - link: https://www.coursera.org/learn/analytics-mysql
+      name: MySQL
     description: Execute the most useful query and table aggregation statements for business analysts, and practice using them with real databases.

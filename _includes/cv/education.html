@@ -1,38 +1,16 @@
-<div class="row" markdown="1">
-{:.col-lg-offset-3}
-# Education
----
+<div class="row">
+    <div class="col-lg-3">
+    </div>
+    <div class="col-lg-9">
+        <h1 id="education">Education</h1>
+    </div>
 </div>
+<hr>
+{%assign education = site.data.cv.education | first %}
+{% include cv/panel_section.html section=education use_name='false'%}
 
-{% for education in site.data.cv.education.formal  %}
-<div class="row" markdown="1">
-{:.col-lg-3 .vcenter .text-right}
-#### ```{{ education.years }}```
+{%assign education = site.data.cv.education | where: "name":'Self Education' | first%}
+{% include cv/panel_section.html section=education use_name='true'%}
 
-{:.col-lg .vcenter}
-####  {{ education.degree }}
-</div>
-<div class="row"> <div class="col-lg-offset-3" markdown="1">
-<i class="fa fa-university fa-lg"></i> {{ education.university }} 
-<i class="fa fa-globe fa-lg"></i>   {{ education.city }}
-</div>
-</div>
 
-{% endfor%}
 
-<div class="row" markdown="1">
-{:.col-lg-offset-3}
-# Self-education
----
-</div>
-
-{% for selfedu in site.data.cv.education.selfeducation  %}
-<div class="row" markdown="1">
-<div class="col-lg-offset-3" markdown="1">
-### [{{selfedu.course}}]({{selfedu.link}})
-
-{{selfedu.description}}
-
-</div>
-</div>
-{% endfor %}
