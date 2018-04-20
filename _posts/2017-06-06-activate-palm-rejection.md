@@ -1,6 +1,7 @@
 ---
 layout: post
-title: Activating Palm Rejection on XPS-13 Ubuntu 16.04 
+subtitle: Activating Palm Rejection on XPS-13 Ubuntu 16.04 
+title: Palm Rejection
 tags: [setup,xps13,ubuntu]
 comments: true
 ---
@@ -11,9 +12,9 @@ noticed is that the palm rejection feature is not present at all.
 I will try to describe as best as I can the methods I have tried and whether or not they
 were successful.
 
-* *libinput:*
+### libinput
 
-I tried was was suggested [here](#https://www.reddit.com/r/Dell/comments/4pgek1/dell_xps_13_touch_pad_palm_detection_on_ubuntu/) adn installed:
+I tried was was suggested [here](#https://www.reddit.com/r/Dell/comments/4pgek1/dell_xps_13_touch_pad_palm_detection_on_ubuntu/) and installed:
 
 ```
 sudo apt-get install xserver-xorg-input-libinput

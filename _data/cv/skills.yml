@@ -1,3 +1,11 @@
+- name: Programming languages
+  list:
+    - name: C++
+    - name: Python
+    - name: Scala
+    - name: Javascript
+    - name: PHP
+    - name:
 - name: Software development
   list:
     - name: C++
@@ -12,3 +20,18 @@
     - name: Programming
       level: 5
       description: Great experience in Object Oriented Programming, concurrency and multithreading issues. Experience in Functional Programming. UML design. Qt GUIs.
+- name: DevOps
+  list:
+    - name: Docker
+      level: 3
+      description:       
+- name: Engineering
+  list:
+    - name: Robotics
+    - name: Computer Vision      
+- name: Soft Skills
+  list:
+    - name: Scrum
+    - name: Public speaking
+    - name: Team work
+    - name: 

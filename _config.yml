@@ -186,6 +186,7 @@ exclude:
   - LICENSE
   - README.md
   - Vagrantfile
+  - launch_docker.sh
 
 # prose.io config
 prose:
