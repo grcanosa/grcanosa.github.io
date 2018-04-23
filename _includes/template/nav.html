@@ -1,11 +1,16 @@
-<nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+<nav class="navbar fixed-top navbar-custom bg-light">
   <div class="container-fluid">
     <div class="navbar-header">
+      {% comment %}
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
+      </button>
+      {% endcomment %}
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
       </button>
       {% if site.title-img %}
         <a class="navbar-brand navbar-brand-logo" href="{{ site.url }}"><img src="{{ site.title-img }}"/></a>
@@ -16,21 +21,19 @@
 
     <div class="collapse navbar-collapse" id="main-navbar">
       <ul class="nav navbar-nav navbar-right">
-      {% for link in site.navbar-links %}
-        {% if link[1].first %}
+      {% for link in site.data.navbar_links %}
+        {% if link.sublinks %}
           <li class="navlinks-container">
-            <a class="navlinks-parent" href="javascript:void(0)">{{ link[0] }}</a>
+            <a class="navlinks-parent" href="{{link.link}}">{{ link.name }}</a>
             <div class="navlinks-children">
-              {% for childlink in link[1] %}
-                {% for linkparts in childlink %}
-                  {% include navbarlink.html link=linkparts %}
-                {% endfor %}
+              {% for childlink in link.sublinks %}
+                  {% include template/navbarlink.html link=childlink %}
               {% endfor %}
             </div>
           </li>
         {% else %}
           <li>
-            {% include navbarlink.html link=link %}
+            {% include template/navbarlink.html link=link %}
           </li>
         {% endif %}
         {% endfor %}
