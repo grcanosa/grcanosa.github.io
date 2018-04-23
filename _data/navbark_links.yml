@@ -1,0 +1,17 @@
+- name: Home
+  link: ""
+- name: "Blog"
+  link: "pages/blog/"
+- name: "About Me"
+  link: "pages/aboutme/"
+- name: "CV"
+  link: "pages/cv/"
+  sublinks:
+    - name: Experience
+      link: "pages/cv#professional-experience"
+    - name: Skills
+      link: "pages/cv#technical-skills"
+    - name: Education
+      link: "pages/cv#education"
+    - name: Languages
+      link: "pages/cv#languages"
