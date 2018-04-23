@@ -8,9 +8,12 @@
 {% endif %}
 
 {% if internal %}
-  {% capture linkurl %}{{ site.baseurl }}/{{ include.link[1] }}{% endcapture %}
+  {% capture linkurl %}{{ site.baseurl }}/{{ include.link.link }}{% endcapture %}
 {% else %}
   {% capture linkurl %}{{ include.link.link }}{% endcapture %}
 {% endif %}
-
-<a href="{{ linkurl }}">{{ include.link.name }}</a>
+{% if include.dropdown %}
+<a class="dropdown-item" href="{{ linkurl }}">{{ include.link.name }}</a>
+{% else %}
+<a class="nav-link" href="{{ linkurl }}">{{ include.link.name }}</a>
+{%endif%}
