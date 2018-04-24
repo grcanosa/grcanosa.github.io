@@ -38,7 +38,7 @@ var main = {
     });
 
     // Ensure nested navbar menus are not longer than the menu header
-    var menus = $(".navlinks-container");
+    var menus = $(".nav-item.dropdown");
     if (menus.length > 0) {
       var navbar = $("#main-navbar ul");
       var fakeMenuHtml = "<li class='fake-menu' style='display:none;'><a></a></li>";
@@ -46,8 +46,8 @@ var main = {
       var fakeMenu = $(".fake-menu");
 
       $.each(menus, function(i) {
-        var parent = $(menus[i]).find(".navlinks-parent");
-        var children = $(menus[i]).find(".navlinks-children a");
+        var parent = $(menus[i]).find(".nav-link.dropdown-toggle");
+        var children = $(menus[i]).find(".dropdown-item");
         var words = [];
         $.each(children, function(idx, el) { words = words.concat($(el).text().trim().split(/\s+/)); });
         var maxwidth = 0;
@@ -59,6 +59,7 @@ var main = {
           }
         });
         $(menus[i]).css('min-width', maxwidth + 'px')
+        $(menus[i]).css('min-width', '158px')
       });
 
       fakeMenu.remove();
