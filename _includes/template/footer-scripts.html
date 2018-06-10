@@ -1,35 +1,13 @@
-{% if layout.common-ext-js %}
-  {% for js in layout.common-ext-js %}
-    {% include template/ext-js.html js=js %}
-  {% endfor %}
-{% endif %}
 
-{% if page.ext-js %}
-  {% for js in page.ext-js %}
-    {% include template/ext-js.html js=js %}
+
+{% if layout.common-js %}
+  {% for js in layout.common-js %}
+	<script src="{{ js | relative_url | replace: '//', '/' }}"></script>
   {% endfor %}
 {% endif %}
 
 {% if page.js %}
   {% for js in page.js %}
-	<script src="{{ js | prepend: site.staticres | replace: '//', '/' }}"></script>
+	<script src="{{ js | relative_url | replace: '//', '/' }}"></script>
   {% endfor %}
 {% endif %}
-
-{% if layout.common-js %}
-  {% for js in layout.common-js %}
-    <!-- doing something a bit funky here because I want to be careful not to include JQuery twice! -->
-    {% if js contains 'jquery' %}
-      <script>
-      	if (typeof jQuery == 'undefined') {
-      	  document.write('<script src="{{ js | prepend: site.staticres | replace: "//", "/" }}"></scr' + 'ipt>');
-      	}
-      </script>
-    {% else %}
-	<script src="{{ js | prepend: site.staticres | replace: '//', '/' }}"></script>
-    {% endif %}
-  {% endfor %}
-{% endif %}
-{%comment%}
-{% include google_analytics.html %}
-{%endcomment%}

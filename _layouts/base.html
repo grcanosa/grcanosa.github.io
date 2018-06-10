@@ -1,36 +1,28 @@
 ---
 common-css:
-  - "/css/bootstrap.min.css"
-  - "/css/bootstrap-social.css"
-  - "/css/main2.css"
-common-ext-css:
-  - "//stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-common-googlefonts:
-  - "Lora:400,700,400italic,700italic"
-  - "Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800"
+  - /assets/3rd/css/bootstrap.min.css
 common-js:
-  - "/js/jquery-1.11.2.min.js"
-  - "/js/bootstrap.min.js"
-  - "/js/main.js"
+  - /assets/3rd/js/jquery-3.3.1.min.js
+  - /assets/3rd/js/pooper.min.js
+  - /assets/3rd/js/bootstrap.min.js
 ---
+
 
 <!DOCTYPE html>
 <html lang="en">
-  <!-- Beautiful Jekyll | MIT license | Copyright Dean Attali 2016 -->
+  <!-- grcanosa | MIT license | Copyright grcanosa 2018 -->
   {% include template/head.html %}
 
   <body>
 
-    {% include template/gtm_body.html %}
-  
     {% include template/nav.html %}
 
     {{ content }}
-    
+
     {% include template/footer.html %}
 
     {% include template/footer-scripts.html %}
 
-
   </body>
 </html>
+
