@@ -14,12 +14,12 @@ Sometimes you have temporal datasets where the variables remain constant during 
 For example, image you have binary data that looks like this:
 
 {% raw %}
-<iframe  frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="300" src="/assets/html/2018_10_15_reduce_temporal_data_1.html"></iframe>
+<iframe  frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="300" src="/static/html/2018_10_15_reduce_temporal_data_1.html"></iframe>
 {% endraw %}
 
 You can generate sample data with this code:
 
-```python
+~~~ python
 #Create temporal index and random binary data
 data_len = 100
 max_num = 3
@@ -40,11 +40,11 @@ for c in range(0,n_cols):
     df["DATA"+str(c)] = data    
 df.head(10)
 plt.iplot([go.Scatter(x=df.DATE,y=df.DATA0,mode="lines+markers")])
-```
+~~~
 You can filter the points whose left and right points (temporal-wise) are exactly the same and still obtain the same plot shape. 
 
 {% raw %}
-<iframe  frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="300" src="/assets/html/2018_10_15_reduce_temporal_data_2.html"></iframe>
+<iframe  frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="300" src="/static/html/2018_10_15_reduce_temporal_data_2.html"></iframe>
 {% endraw %}
 
 These filtering can be achieved like this:

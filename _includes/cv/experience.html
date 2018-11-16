@@ -1,7 +1,9 @@
 <div class="row">
         <h1 class="col-lg-9 col-lg-offset-3" id="profesional-experience"> Professional Experience</h1>
 </div>
+<br>
 {% for exp in site.data.cv.experience %}
 {% include cv/panel_section.html section=exp use_name='true' %}
+<br>
 {%endfor%}
 <hr>

@@ -1,8 +1,10 @@
 FROM jekyll/jekyll:3.8
 
 COPY Gemfile .
-COPY Gemfile.lock .
+COPY jekyll-theme-clean-blog.gemspec .
+#COPY jekyll-theme-clean-blog.gemspec .
 
-RUN bundle install --quiet --clean
-
-CMD ["jekyll", "serve","--drafts"]
+#RUN bundle install --quiet --clean
+RUN gem cleanup
+RUN bundle install
+CMD ["jekyll","serve","--drafts"]

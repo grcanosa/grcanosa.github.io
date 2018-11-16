@@ -1,5 +1,16 @@
 - name: Education
   list:
+  - years: Oct 2018 - Feb 2019
+    position: Full Stack Developer with Reactive Patterns Bootcamp
+    institution: Datahack
+    city: Madrid
+    skills: Scala, Akka, Play, Slick, Lagom, Kafka.
+    links: 
+      - link: https://www.datahack.es/
+        name: Datahack
+      - link: https://www.datahack.es/formacion/bootcamp-full-stacks-developers/
+        name: Full Stack Developer 
+    description:       
   - years: 2009 - 2013
     position: PhD in Robotics and Automatics
     institution: Technical University of Madrid

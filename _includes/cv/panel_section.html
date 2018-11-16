@@ -4,54 +4,57 @@
     <h3 class=" col-lg-offset-3 col-lg-9">{{include.section.name}}</h3>
 </div>
 {% endif %}
-<div class="panel-group" id="accordion-{{id}}" role="tablist" aria-multiselectable="true">
+<div class="accordion" id="accordion-{{id}}">
     {% for info in include.section.list %}
-    <div class="panel panel-default">
-        <div class="panel-heading" role="tab" id="heading-{{id}}-{{forloop.index}}">
-            <div class="panel-title row">
-                <a role="button" data-toggle="collapse" data-parent="#accordion-{{id}}" href="#collapse-{{id}}-{{forloop.index}}" aria-expanded="false" aria-controls="collapse-{{id}}-{{forloop.index}}">
-                    <h4 class="col-lg-3 vcenter text-right">
-                        <code>{{info.years}}</code>
-                    </h4>
-                    <h4 class="col-lg-8 vcenter text-left">
-                        {{ info.position }} <small>@ {{ info.institution | markdownify | remove: '<p>' | remove: '</p>'}}</small>
-                    </h4> 
-                    
-                </a>
-            </div>
-        </div>
-        <div id="collapse-{{id}}-{{forloop.index}}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-{{id}}-{{forloop.index}}">
-            <div class="panel-body row">
-                {% if info.links or info.city %}
-                <div class="col-lg-3 vcenter">
-                    {% if info.city %}
-                    <h5>
-                        <i class="fa fa-globe fa-lg"></i> {{ info.city }}
-                    </h5>
-                    {% if info.city and info.links%}
-                    <hr>
-                    {% endif %}
-                    {% endif %}
-                    {% for liinfo in info.links %}
-                    <h5>
-                        <a class="panel-title" href="{{liinfo.link}}">
-                            <i class="fa fa-link fa-lg"></i> {{liinfo.name}}
-                        </a>
-                        <br>
-                    </h5>
-                    {% endfor %}
+    <div class="card">
+        <div class="card-header" id="heading-{{id}}-{{forloop.index}}">
+            <a role="button" data-toggle="collapse" data-parent="#accordion-{{id}}" href="#collapse-{{id}}-{{forloop.index}}"
+             aria-expanded="false" aria-controls="collapse-{{id}}-{{forloop.index}}"
+             style="text-decoration: none;">
+                <div class="row align-items-center">
+                    <h6 class="col-lg-2 text-right">
+                       <span class="align-middle"><small>{{info.years}}</small></span>
+                    </h6>
+                    <h5 class="col-lg-9 text-left">
+                        <span class="align-middle">{{ info.position }} <small>@ {{ info.institution | markdownify | remove: '<p>' | remove: '</p>'}}</small></span>
+                    </h5> 
                 </div>
-                <div class="col-lg-8 vcenter" >
-                {% else %}
-                <div class="col-lg-offset-3 col-lg-8 vcenter" >
-                {% endif %}
-{{ info.description | markdownify}}
-                    {% if info.skills %}
-                    <blockquote> Skills: {{ info.skills }} </blockquote>
+            </a>
+        </div>
+        <div id="collapse-{{id}}-{{forloop.index}}" class="collapse" role="tabpanel" aria-labelledby="heading-{{id}}-{{forloop.index}}" data-parent="#accordion-{{id}}">
+            <div class="card-body">
+                <div class="row align-items-center">
+                    <!-- Left Area -->
+                    {% if info.links or info.city %}
+                        <div class="col-lg-2">
+                            {% if info.city %}
+                            <h6><i class="fa fa-globe fa-lg"></i> <a href="https://www.google.com/maps/place/{{info.city}}">{{ info.city }}</a></h6>
+                            {% endif %}
+                            {% if info.city and info.links%}
+                            <hr>
+                            {% endif %}
+                            {% for liinfo in info.links %}
+                            <h6>
+                                <a class="panel-title" href="{{liinfo.link}}">
+                                    <i class="fa fa-link fa-lg"></i> {{liinfo.name}}
+                                </a>
+                                <br>
+                            </h6>
+                            {% endfor %}
+                        </div>
+                    {% else %}
+                        <div class="col-lg-2"></div>
                     {% endif %}
-                    {% if info.projects %}
-                    <blockquote> Projects: {{ info.projects }} </blockquote>
-                    {% endif %}
+                    <!-- Right Area -->
+                    <div class="col-lg-9" >
+                        <p>{{ info.description | markdownify}}</p>
+                        {% if info.skills %}
+                           <blockquote> Skills: {{ info.skills }} </blockquote>
+                        {% endif %}
+                        {% if info.projects %}
+                           <blockquote> Projects: {{ info.projects }} </blockquote>
+                        {% endif %}
+                    </div>
                 </div>
             </div>
         </div>

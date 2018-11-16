@@ -5,7 +5,7 @@
 </div>
 {%assign education = site.data.cv.education | first %}
 {% include cv/panel_section.html section=education use_name='false'%}
-
+<br>
 {%assign education = site.data.cv.education | where: "name":'Self Education' | first%}
 {% include cv/panel_section.html section=education use_name='true'%}
 <hr>

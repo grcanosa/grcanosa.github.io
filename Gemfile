@@ -1,7 +1,16 @@
-source 'http://rubygems.org'
+# frozen_string_literal: true
 
-gem "github-pages", '163', group: :jekyll_plugins
+source "http://rubygems.org"
+gemspec
 
-# enable tzinfo-data for local build
-# gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw]
-gem 'jekyll-paginate'
+gem "jekyll", "~> 3.6.0"
+
+group :jekyll_plugins do
+  gem "jekyll-feed", "~> 0.6"
+  gem "jekyll-paginate", "~> 1.1.0"
+end
+
+require 'rbconfig'
+  if RbConfig::CONFIG['target_os'] =~ /darwin(1[0-3])/i
+    gem 'rb-fsevent', '<= 0.9.4'
+  end

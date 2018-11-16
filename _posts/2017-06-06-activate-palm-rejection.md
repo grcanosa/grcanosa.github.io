@@ -4,6 +4,7 @@ subtitle: Activating Palm Rejection on XPS-13 Ubuntu 16.04
 title: Palm Rejection
 tags: [setup,xps13,ubuntu]
 comments: true
+#background: '/static/img/gonzalo.jpg'
 ---
 
 After receiving my brand new XPS-13 with Ubuntu 16.04 the first thing I
