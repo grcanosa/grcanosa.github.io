@@ -286,4 +286,21 @@
 - name: Plotly
   url: 
   img: /static/img/technologies/plotly.png
-
+- name: AWS
+  url:
+  img: /static/img/technologies/aws.png
+- name: Kubernetes
+  url:
+  img: /static/img/technologies/kubernetes.png
+- name: Elastic Search
+  url:
+  img: /static/img/technologies/elasticsearch.png
+- name: Logstash
+  url:
+  img: /static/img/technologies/logstash.png
+- name: Kibana
+  url:
+  img: /static/img/technologies/kibana.png
+- name: Spark
+  url:
+  img: /static/img/technologies/spark.jpeg

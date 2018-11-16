@@ -3,7 +3,7 @@ email:             grcanosa@gmail.com
 description:       Programming tricks and other tech-related goodies.
 author:            grcanosa
 baseurl:           ""
-url:               "http://grcanosa.github.io"
+url:               "https://grcanosa.github.io/"
 
 # Social Profiles
 twitter_username:  grcanosa
