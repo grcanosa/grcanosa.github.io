@@ -208,48 +208,48 @@
   level: 1
   url: https://www.eclipse.org/
   img: /static/img/technologies/eclipse.png
-- name: Jupyter
-  categories:
-    - Development
-  level: 1
-  url: http://jupyter.org/
-  img: /static/img/technologies/jupyter.png  
-- name: CMake
-  categories:
-    - Development
-  level: 1
-  url: https://cmake.org/
-  img: /static/img/technologies/cmake.png  
-- name: GNU Make
-  categories:
-    - Development
-  level: 1
-  url: https://www.gnu.org/software/make/
-  img: /static/img/technologies/gnumake.png  
-- name: GNU GDB
-  categories:
-    - Development
-  level: 1
-  url: https://www.gnu.org/software/gdb/
-  img: /static/img/technologies/gdb.png   
-- name: Valgrind
-  categories:
-    - Development
-  level: 1
-  url: http://www.valgrind.org/
-  img: /static/img/technologies/valgrind.png     
-- name: Qt
-  categories:
-    - Development
-  level: 1
-  url: https://www.qt.io/
-  img: /static/img/technologies/qt.png    
-- name: Matlab
-  categories:
-    - Development
-  level: 1
-  url: https://www.mathworks.com/products/matlab.html
-  img: /static/img/technologies/matlab.png
+# - name: Jupyter
+#   categories:
+#     - Development
+#   level: 1
+#   url: http://jupyter.org/
+#   img: /static/img/technologies/jupyter.png  
+# - name: CMake
+#   categories:
+#     - Development
+#   level: 1
+#   url: https://cmake.org/
+#   img: /static/img/technologies/cmake.png  
+# - name: GNU Make
+#   categories:
+#     - Development
+#   level: 1
+#   url: https://www.gnu.org/software/make/
+#   img: /static/img/technologies/gnumake.png  
+# - name: GNU GDB
+#   categories:
+#     - Development
+#   level: 1
+#   url: https://www.gnu.org/software/gdb/
+#   img: /static/img/technologies/gdb.png   
+# - name: Valgrind
+#   categories:
+#     - Development
+#   level: 1
+#   url: http://www.valgrind.org/
+#   img: /static/img/technologies/valgrind.png     
+# - name: Qt
+#   categories:
+#     - Development
+#   level: 1
+#   url: https://www.qt.io/
+#   img: /static/img/technologies/qt.png    
+# - name: Matlab
+#   categories:
+#     - Development
+#   level: 1
+#   url: https://www.mathworks.com/products/matlab.html
+#   img: /static/img/technologies/matlab.png
 - name: ROS
   url: http://www.ros.org/
   img: /static/img/technologies/ros.png
@@ -262,6 +262,28 @@
 - name: IntelliJ Idea
   url: https://www.jetbrains.com/idea/
   img: /static/img/technologies/intellij.png
+- name: MySQL
+  url: https://www.mysql.com/
+  img: /static/img/technologies/mysqldb.png
 - name: Zookeeper
   url: http://zookeeper.apache.org
   img: /static/img/technologies/zookeeper.jpeg
+- name: Avro
+  url: https://avro.apache.org/
+  img: /static/img/technologies/avro.png
+- name: Flask
+  url: 
+  img: /static/img/technologies/flask.jpeg
+- name: Matplotlib
+  url: 
+  img: /static/img/technologies/matplotlib.png
+- name: Pandas
+  url: 
+  img: /static/img/technologies/pandas.png
+- name: Numpy
+  url: 
+  img: /static/img/technologies/numpy.jpeg
+- name: Plotly
+  url: 
+  img: /static/img/technologies/plotly.png
+

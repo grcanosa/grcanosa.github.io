@@ -1,11 +1,11 @@
 <div class="row align-items-center">
-        {% for skill in site.data.technologies%}
-        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
-            <a href="{{skill.url}}">
-        <img class="card-img-top" style="width:95%"
+    {% for skill in site.data.technologies %}
+    <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+        <a href="{{skill.url}}">
+            <img class="card-img-top" style="width:95%"
                 src="{{skill.img}}" alt="{{skill.name}}">
-            </a>
-        </div>
-        {% endfor %}
+        </a>
     </div>
+    {% endfor %}
+</div>
         
