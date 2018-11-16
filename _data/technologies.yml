@@ -1,0 +1,267 @@
+- name: C, C#, C++
+  categories:
+    - Programming Languages
+  level: 3
+  url: http://www.cplusplus.com/
+  img: /static/img/technologies/c.png
+- name: Python
+  categories:
+    - Programming Languages
+  level: 3
+  url: https://www.python.org/
+  img: /static/img/technologies/python.jpg
+- name: Java
+  categories:
+    - Programming Languages
+  level: 1
+  url: https://www.java.com/
+  img: /static/img/technologies/java.png  
+- name: Bash
+  categories:
+    - Programming Languages
+  level: 3
+  url: https://www.gnu.org/software/bash/
+  img: /static/img/technologies/bash.png    
+- name: Scala
+  categories:
+    - Programming Languages
+  level: 2
+  url: https://www.scala-lang.org/
+  img: /static/img/technologies/scala.png     
+   
+- name: Akka
+  categories:
+    - Reactive Programming
+  level: 1
+  url: https://www.lightbend.com/akka
+  img: /static/img/technologies/akka.png 
+- name: Slick
+  categories:
+    - Reactive Programming
+  level: 1
+  url: http://slick.lightbend.com/
+  img: /static/img/technologies/slick.png  
+- name: Play
+  categories:
+    - Reactive Programming
+  level: 1
+  url: https://www.lightbend.com/play-framework
+  img: /static/img/technologies/play.png
+- name: Lagom
+  categories:
+    - Reactive Programming
+  level: 1
+  url: https://www.lightbend.com/lagom-framework
+  img: /static/img/technologies/lagom.png
+- name: Kafka
+  categories:
+    - Reactive Programming
+  level: 1
+  url: https://kafka.apache.org/
+  img: /static/img/technologies/kafka.jpg  
+- name: Ansible
+  categories:
+    - Devops
+  level: 2
+  url: https://www.ansible.com/
+  img: /static/img/technologies/ansible.png              
+- name: Bootstrap
+  categories:
+    - Frontend
+  level: 1
+  url: https://getbootstrap.com
+  img: /static/img/technologies/bootstrap.png
+- name: Docker
+  categories:
+    - Devops
+  level: 3
+  url: https://www.docker.com/
+  img: /static/img/technologies/docker.png  
+- name: Git
+  categories:
+    - Devops
+    - Development
+  level: 3
+  url: https://git-scm.com/
+  img: /static/img/technologies/git.png  
+- name: Github
+  categories:
+    - Development
+  level: 1
+  url: https://www.github.com
+  img: /static/img/technologies/github.png       
+- name: GitLab
+  categories:
+    - Development
+  level: 1
+  url: https://www.gitlab.com
+  img: /static/img/technologies/gitlab.png
+- name: SVN
+  categories:
+    - Development
+  level: 3
+  url: https://subversion.apache.org/   
+  img: /static/img/technologies/svn.jpg
+- name: PHP
+  categories:
+    - Programming Languages
+  level: 1
+  url: http://php.net/
+  img: /static/img/technologies/php.png  
+- name: HTML-CSS
+  categories:
+    - Frontend
+  level: 1
+  url: https://es.wikipedia.org/wiki/HTML5
+  img: /static/img/technologies/html5-css3.png
+- name: Javascript
+  categories:
+    - Frontend
+  level: 1
+  url: https://developer.mozilla.org/es/docs/Web/JavaScript
+  img: /static/img/technologies/javascript.png  
+- name: Jekyll
+  categories:
+    - Frontend
+  level: 2
+  url: https://jekyllrb.com/
+  img: /static/img/technologies/jekyll.png
+- name: Hugo
+  categories:
+    - Frontend
+  level: 1
+  url: https://gohugo.io/
+  img: /static/img/technologies/hugo.png  
+- name: Jenkins
+  categories:
+    - Devops
+  level: 1
+  url: https://jenkins.io/
+  img: /static/img/technologies/jenkins.png  
+- name: Linux
+  categories:
+    - SO
+  level: 3
+  url: https://www.linux.org/
+  img: /static/img/technologies/linux.png  
+- name: MongoBD
+  categories:
+    - NoSQL
+    - DB
+  level: 1
+  url: https://www.mongodb.com/es
+  img: /static/img/technologies/mongodb.png  
+- name: PostgresSQL
+  categories:
+    - SQL
+    - DB
+  level: 1
+  url: https://www.postgresql.org/
+  img: /static/img/technologies/postgressql.png  
+- name: SQLite
+  categories:
+    - SQL
+    - DB
+  level: 1
+  url: https://www.sqlite.org/index.html
+  img: /static/img/technologies/sqlite.png  
+- name: TypeSafe Config
+  categories:
+    - Lightbend
+    - Reactive Programming
+  level: 1
+  url: https://github.com/lightbend/config
+  img: /static/img/technologies/typesafe.png  
+- name: Vagrant
+  categories:
+    - Devops
+  level: 1
+  url: https://www.vagrantup.com/
+  img: /static/img/technologies/vagrant.png
+- name: Vim
+  categories:
+    - Development
+  level: 1
+  url: https://www.vim.org/
+  img: /static/img/technologies/vim.png
+- name: VSCode
+  categories:
+    - Development
+  level: 1
+  url: https://code.visualstudio.com/
+  img: /static/img/technologies/vscode.png
+- name: Boost
+  categories:
+    - C++
+  level: 1
+  url: https://www.boost.org/
+  img: /static/img/technologies/boost.png
+- name: OpenCV
+  categories:
+    - C++
+  level: 1
+  url: https://opencv.org/
+  img: /static/img/technologies/opencv.png            
+- name: Eclipse
+  categories:
+    - Development
+  level: 1
+  url: https://www.eclipse.org/
+  img: /static/img/technologies/eclipse.png
+- name: Jupyter
+  categories:
+    - Development
+  level: 1
+  url: http://jupyter.org/
+  img: /static/img/technologies/jupyter.png  
+- name: CMake
+  categories:
+    - Development
+  level: 1
+  url: https://cmake.org/
+  img: /static/img/technologies/cmake.png  
+- name: GNU Make
+  categories:
+    - Development
+  level: 1
+  url: https://www.gnu.org/software/make/
+  img: /static/img/technologies/gnumake.png  
+- name: GNU GDB
+  categories:
+    - Development
+  level: 1
+  url: https://www.gnu.org/software/gdb/
+  img: /static/img/technologies/gdb.png   
+- name: Valgrind
+  categories:
+    - Development
+  level: 1
+  url: http://www.valgrind.org/
+  img: /static/img/technologies/valgrind.png     
+- name: Qt
+  categories:
+    - Development
+  level: 1
+  url: https://www.qt.io/
+  img: /static/img/technologies/qt.png    
+- name: Matlab
+  categories:
+    - Development
+  level: 1
+  url: https://www.mathworks.com/products/matlab.html
+  img: /static/img/technologies/matlab.png
+- name: ROS
+  url: http://www.ros.org/
+  img: /static/img/technologies/ros.png
+- name: Maven
+  url: https://maven.apache.org/
+  img: /static/img/technologies/maven.png
+- name: SBT
+  url: https://www.scala-sbt.org/
+  img: /static/img/technologies/sbt.png
+- name: IntelliJ Idea
+  url: https://www.jetbrains.com/idea/
+  img: /static/img/technologies/intellij.png
+- name: Zookeeper
+  url: http://zookeeper.apache.org
+  img: /static/img/technologies/zookeeper.jpeg

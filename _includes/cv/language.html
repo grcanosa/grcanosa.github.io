@@ -1,0 +1,11 @@
+<h2>Languages</h2>
+<br>
+{% for lang in site.data.cv.languages %}
+
+<div class="row align-items-center">
+    <div class="col-2">{{lang.language}}</div>
+    <div class="col-5">{{lang.description}}</div>
+    <div class="col-5">{{lang.degree}}</div>
+</div>
+<br>
+{% endfor %}
