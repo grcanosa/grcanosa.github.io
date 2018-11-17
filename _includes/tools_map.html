@@ -1,9 +1,44 @@
+{% assign tags = "" | split: "," %}
+{% for skill in site.data.technologies %}
+{% for tag in skill.categories %}
+{% assign my_tag = tag | strip | split: "|" %}
+{% assign tags = tags | concat: my_tag %}
+{% endfor %}
+{% endfor %}
+
+
+{% assign uniq_tags = tags | uniq %}
+
+<select class="custom-select custom-select-lg mb-3"  id="tools_select" onchange='changeInTools()'>
+          <option selected id="tool_select_all">All</option>
+          {% for t in uniq_tags %}
+            <option id='tool_{{t | downcase | replace: " ", "_"}}'
+                    value='tool_{{t | downcase | replace: " ", "_"}}'
+            >{{t}}</option> 
+          {% endfor %}
+    </select>
+
+
 <div class="row align-items-center">
     {% for skill in site.data.technologies %}
-    <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+    {% capture tool_labels %}
+    {% for cat in skill.categories %}
+        tool_{{cat | downcase | replace: " ", "_"}} 
+    {% endfor %}
+    {% endcapture %}
+
+    <div class="col-xl-2 col-lg-2 col-md-3 col-sm-4 col-6 tool_item {{tool_labels}}">
         <a href="{{skill.url}}">
-            <img class="card-img-top" style="width:95%"
-                src="{{skill.img}}" alt="{{skill.name}}">
+            {% capture level %}
+                {{skill.level}}
+            {% endcapture%}
+
+            <img class="grc-tooltip" style="width:95%"
+                src="{{skill.img}}" alt="{{skill.name}}"
+                data-placement="top"
+                data-html="true"
+                data-toggle="popover" title="{{skill.name}}" data-content='{% include stars.html level=level%}'
+                >
         </a>
     </div>
     {% endfor %}

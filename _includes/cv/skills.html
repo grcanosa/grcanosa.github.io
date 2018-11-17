@@ -4,14 +4,19 @@
         <h1 id="education"><a href="/pg/skills">Technical Skills</a></h1>
     </div>
 </div>
+<p>For a complete list of all the tools and technologies I have knowledge on, please <a href="/pg/tools">click here.</a></p>
 <hr>
-{% comment %}
-
-{% for section in site.data.cv.skills %}
-<div class="row">
-    <h3 class="col-lg-9 col-lg-offset-3">{{section.name}}</h3>
+{% for sec in site.data.cv.technical_skills %}
+<h4>{{sec.name}}</h4>
+<hr>
+{% for ski in sec.list %}
+<div class="row align-items-center">
+<div class="col-3">{{ski.name}}</div>
+<div class="col-9">{{ski.description}}</div>
 </div>
-{% endfor %}
 <hr>
-{% endcomment %}
+{% endfor %}
+<br>
+{% endfor %}
+
 

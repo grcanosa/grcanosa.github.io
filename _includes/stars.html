@@ -1,0 +1,7 @@
+{% for i in (1..level) %}
+<i class="fas fa-star"></i>
+{%endfor%}
+{% assign level2 = 5 | minus: level %}
+{% for i in (1..level2) %}
+<i class="far fa-star"></i>
+{% endfor %}

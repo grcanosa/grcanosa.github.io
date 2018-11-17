@@ -22,3 +22,9 @@ function random_color_masthead()
   }
 }
 random_color_masthead()
+
+$(function () {
+  $('[data-toggle="popover"]').popover({
+    "trigger":"hover"
+  })
+})

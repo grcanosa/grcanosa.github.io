@@ -1,0 +1,30 @@
+- name: Computer Skills
+  list:
+    - name: C++
+      description: Large experience in different projects with multiple libraries (Boost, OpenCV, STL, C++11). Experience with performance improvements techniques and profilers tools.
+    - name: Python
+      description: Experience with different multi-purposes modules. Object oriented programming. Experience with data analytics libraries such as pandas, numpy, matplotlib, seaborn, bokeh, folium, ...
+    - name: Other
+      description: Scala, C#, Java, SQL, bash, batch
+    - name: Programming
+      description: Great experience in Object Oriented Programming, concurrency and multithreading issues. Experience in Functional Programming. UML design. Qt GUIs.
+    - name: Development
+      description: Git, SVN, Docker, Jupyter notebooks, IntelliJ, Eclipse, CMake, Makefile, Microsoft Visual Studio, GDB debugger, Valgrind, ... SCRUM methodologies and Agile development. Test Driven Development. 
+    - name: Linux
+      description: Large development experience in Linux based systems using terminal-based utilities.
+    - name: Virtualization
+      description: Virtual machines, chroot, Docker, docker-compose.
+- name: Engineering Processes
+  list: 
+    - name: Production
+      description: Experience in the full product cycle from prototypes validation, to testing, to validation, to client technical support.
+    - name: Hardware
+      description: "Sensor and actuator control. I2C, 485, ethernet,... Experience with train related equipments: cabin monitors, cctv cpus, passenger monitors, TCMS, MVB,.."
+    - name: Simulation
+      description: Webots, Player-Gazebo, Simulink.
+    - name: Matlab
+      description: Fast prototyping of algorithms. Graphical Interfaces.
+    - name: Robotics
+      description: Mobile and aerial robotics (UGV y UAV), Robot Operating System (ROS).
+    - name: Computer Vision
+      description: Expert development in OpenCV and PCL (Point Cloud Library).
