@@ -1,4 +1,4 @@
-# [grcanosa.com](www.grcanosa.com) - My personal blog.
+# [grcanosa.com](http://www.grcanosa.com) - My personal blog.
 
 My personal blog. Template based on [Start Bootstrap - Clean Blog](https://startbootstrap.com/template-overviews/clean-blog/) 
 
