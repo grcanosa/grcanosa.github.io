@@ -13,7 +13,7 @@
         - Technical support for different departments of the company (PC applications, sales, project managers...)
         - Scrum methodologies used for faster and leaner software development and production.
         - Development of hours tracking tools for internal use to monitor the project progress. Based on redmine and develop on redmine and developed using python, jupyter notebooks and pandas.
-      skills: C++ (98/11), Python, Bash, Linux, Javascript, Docker. 
+      skills: C++ (98/11), Object Oriented Programming, Multithreading, REST, CGIs, Fast-CGIS, Python, Bash, Linux, HTML, Javascript, PHP, Eclipse, Docker, 
       projects: Civia for Alstom/RENFE, Mexico Metro for CAF, New York Metro North Railways, Toluca Metro, Guadalajara Metro, GreenLine Metro, Maryland Metro    
       links:
         - link: http://www.sepsa.es/es/
@@ -32,7 +32,7 @@
       city: Madrid
       position: Senior Development Engineer
       description: I was the main developer of an open-source high-performance C++ implementation of the RTPS (Real-Time Publish Subscription) standard of the OMG (www.omg.org). This protocol was designed to manage communications in publish-subscribe frameworks. I also contributed to the writing of the proposal of European Projects. I received a Torres-Quevedo grant from the European Social Funds. I also generated different GUI-applications using the Fast RTPS product I developed.
-      skills: C++, Boost, Asio, Eclipse, Bash, Bat, Windows, Linux
+      skills: C++, Boost, Asio, Eclipse, Bash, Bat, Windows, Linux, Microsoft Visual Studio. 
     - years: Feb 2009 - Nov 2013
       institution: Robotics and Cybernetics Group
       city: Madrid
