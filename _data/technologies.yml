@@ -22,6 +22,7 @@
 - name: Akka
   categories:
     - Reactive Programming
+    - Scala
   level: 3
   url: https://www.lightbend.com/akka
   img: /static/img/technologies/akka.png 
@@ -29,6 +30,7 @@
   categories:
     - Reactive Programming
     - DB
+    - Scala
   level: 2
   url: http://slick.lightbend.com/
   img: /static/img/technologies/slick.png  
@@ -36,6 +38,7 @@
   categories:
     - Reactive Programming
     - REST
+    - Scala
   level: 2
   url: https://www.lightbend.com/play-framework
   img: /static/img/technologies/play.png
