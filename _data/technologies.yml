@@ -368,21 +368,24 @@
 #   img: /static/img/technologies/kubernetes.png
 #   categories:
 #     - Devops
-# - name: Elastic Search
-#   url: https://www.elastic.co/products/elasticsearch
-#   img: /static/img/technologies/elasticsearch.png
-#   categories:
-#     - Reactive Programming
-# - name: Logstash
-#   url: https://www.elastic.co/products/logstash
-#   img: /static/img/technologies/logstash.png
-#   categories:
-#     - Reactive Programming
-# - name: Kibana
-#   url: https://www.elastic.co/products/kibana
-#   img: /static/img/technologies/kibana.png
-#   categories:
-#     - Reactive Programming
+- name: Elastic Search
+  url: https://www.elastic.co/products/elasticsearch
+  img: /static/img/technologies/elasticsearch.png
+  categories:
+    - Reactive Programming
+    - Devops
+- name: Logstash
+  url: https://www.elastic.co/products/logstash
+  img: /static/img/technologies/logstash.png
+  categories:
+    - Reactive Programming
+    - Devops
+- name: Kibana
+  url: https://www.elastic.co/products/kibana
+  img: /static/img/technologies/kibana.png
+  categories:
+    - Reactive Programming
+    - Devops
 # - name: Spark
 #   url:
 #   level: 0
