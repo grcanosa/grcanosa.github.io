@@ -18,7 +18,25 @@
     - Scala
   level: 3
   url: https://www.scala-lang.org/
-  img: /static/img/technologies/scala.png  
+  img: /static/img/technologies/scala.png
+- name: Java
+  categories:
+    - Programming Languages
+  level: 2
+  url: https://www.java.com/
+  img: /static/img/technologies/java.png  
+- name: Bash
+  categories:
+    - Programming Languages
+  level: 4
+  url: https://www.gnu.org/software/bash/
+  img: /static/img/technologies/bash.png    
+- name: Go
+  url: https://golang.org/
+  level: 1
+  categories:
+    - Programming Languages
+  img: /static/img/technologies/golang.jpeg
 - name: Akka
   categories:
     - Reactive Programming
@@ -54,25 +72,63 @@
     - Reactive Programming
   level: 3
   url: https://kafka.apache.org/
-  img: /static/img/technologies/kafka.jpg  
+  img: /static/img/technologies/kafka.jpg 
+- name: Elastic Search
+  url: https://www.elastic.co/products/elasticsearch
+  img: /static/img/technologies/elasticsearch.png
+  categories:
+    - Reactive Programming
+    - Devops
+  level: 3
+- name: Logstash
+  url: https://www.elastic.co/products/logstash
+  img: /static/img/technologies/logstash.png
+  categories:
+    - Reactive Programming
+    - Devops
+  level: 3
+- name: Kibana
+  url: https://www.elastic.co/products/kibana
+  img: /static/img/technologies/kibana.png
+  categories:
+    - Reactive Programming
+    - Devops
+  level: 3 
 - name: Ansible
   categories:
     - Devops
   level: 3
   url: https://www.ansible.com/
-  img: /static/img/technologies/ansible.png              
-- name: Bootstrap
+  img: /static/img/technologies/ansible.png
+- name: Maven
+  level: 3
+  url: https://maven.apache.org/
+  img: /static/img/technologies/maven.png
   categories:
-    - Frontend
+    - Devops
+    - Scala
+- name: SBT
+  level: 3
+  url: https://www.scala-sbt.org/
+  img: /static/img/technologies/sbt.png
+  categories:
+    - Scala
+    - Reactive Programming
+- name: IntelliJ Idea
   level: 4
-  url: https://getbootstrap.com
-  img: /static/img/technologies/bootstrap.png
+  url: https://www.jetbrains.com/idea/
+  img: /static/img/technologies/intellij.png
+  categories:
+    - Development
+    - Reactive Programming
+    - Scala              
+
 - name: Docker
   categories:
     - Devops
   level: 4
   url: https://www.docker.com/
-  img: /static/img/technologies/docker.png  
+  img: /static/img/technologies/docker2.png  
 - name: Git
   categories:
     - Devops
@@ -106,25 +162,20 @@
     - Programming Languages
   level: 2
   url: http://php.net/
-  img: /static/img/technologies/php.png  
+  img: /static/img/technologies/php.png
+- name: Bootstrap
+  categories:
+    - Frontend
+  level: 4
+  url: https://getbootstrap.com
+  img: /static/img/technologies/bootstrap.png  
 - name: HTML-CSS
   categories:
     - Frontend
   level: 3
   url: https://es.wikipedia.org/wiki/HTML5
   img: /static/img/technologies/html5-css3.png
-- name: Java
-  categories:
-    - Programming Languages
-  level: 2
-  url: https://www.java.com/
-  img: /static/img/technologies/java.png  
-- name: Bash
-  categories:
-    - Programming Languages
-  level: 4
-  url: https://www.gnu.org/software/bash/
-  img: /static/img/technologies/bash.png    
+
 - name: Javascript
   categories:
     - Frontend
@@ -137,7 +188,7 @@
     - Frontend
   level: 3
   url: https://jekyllrb.com/
-  img: /static/img/technologies/jekyll.png
+  img: /static/img/technologies/jekyll2.png
 - name: Hugo
   categories:
     - Frontend
@@ -265,27 +316,7 @@
     - CPP
   url: http://www.ros.org/
   img: /static/img/technologies/ros.png
-- name: Maven
-  level: 3
-  url: https://maven.apache.org/
-  img: /static/img/technologies/maven.png
-  categories:
-    - Devops
-- name: SBT
-  level: 3
-  url: https://www.scala-sbt.org/
-  img: /static/img/technologies/sbt.png
-  categories:
-    - Scala
-    - Reactive Programming
-- name: IntelliJ Idea
-  level: 4
-  url: https://www.jetbrains.com/idea/
-  img: /static/img/technologies/intellij.png
-  categories:
-    - Development
-    - Reactive Programming
-    - Scala
+
 - name: MySQL
   level: 3
   url: https://www.mysql.com/
@@ -371,24 +402,7 @@
 #   img: /static/img/technologies/kubernetes.png
 #   categories:
 #     - Devops
-- name: Elastic Search
-  url: https://www.elastic.co/products/elasticsearch
-  img: /static/img/technologies/elasticsearch.png
-  categories:
-    - Reactive Programming
-    - Devops
-- name: Logstash
-  url: https://www.elastic.co/products/logstash
-  img: /static/img/technologies/logstash.png
-  categories:
-    - Reactive Programming
-    - Devops
-- name: Kibana
-  url: https://www.elastic.co/products/kibana
-  img: /static/img/technologies/kibana.png
-  categories:
-    - Reactive Programming
-    - Devops
+
 # - name: Spark
 #   url:
 #   level: 0
@@ -402,12 +416,7 @@
 #   level: 1
 #   url: https://www.mongodb.com/es
 #   img: /static/img/technologies/mongodb.png  
-- name: Go
-  url: https://golang.org/
-  level: 1
-  categories:
-    - Programming Languages
-  img: /static/img/technologies/golang.jpeg
+
 - name: NGINX
   url: https://www.nginx.com/
   level: 3
