@@ -29,7 +29,7 @@
 - name: Slick
   categories:
     - Reactive Programming
-    - DB
+    - BBDD
     - Scala
   level: 2
   url: http://slick.lightbend.com/
@@ -57,7 +57,7 @@
   img: /static/img/technologies/kafka.jpg  
 - name: Ansible
   categories:
-    - Devops
+    - DevOps
   level: 3
   url: https://www.ansible.com/
   img: /static/img/technologies/ansible.png              
@@ -69,13 +69,13 @@
   img: /static/img/technologies/bootstrap.png
 - name: Docker
   categories:
-    - Devops
+    - DevOps
   level: 4
   url: https://www.docker.com/
   img: /static/img/technologies/docker.png  
 - name: Git
   categories:
-    - Devops
+    - DevOps
     - Development
   level: 4
   url: https://git-scm.com/
@@ -83,21 +83,21 @@
 - name: Github
   categories:
     - Development
-    - Devops
+    - DevOps
   level: 4
   url: https://www.github.com
   img: /static/img/technologies/github.png       
 - name: GitLab
   categories:
     - Development
-    - Devops
+    - DevOps
   level: 3
   url: https://www.gitlab.com
   img: /static/img/technologies/gitlab.png
 - name: SVN
   categories:
     - Development
-    - Devops
+    - DevOps
   level: 4
   url: https://subversion.apache.org/   
   img: /static/img/technologies/svn.jpg
@@ -146,7 +146,7 @@
   img: /static/img/technologies/hugo.png  
 - name: Jenkins
   categories:
-    - Devops
+    - DevOps
   level: 3
   url: https://jenkins.io/
   img: /static/img/technologies/jenkins.png  
@@ -159,14 +159,14 @@
 - name: PostgresSQL
   categories:
     - SQL
-    - DB
+    - BBDD
   level: 3
   url: https://www.postgresql.org/
   img: /static/img/technologies/postgressql.png  
 - name: SQLite
   categories:
     - SQL
-    - DB
+    - BBDD
   level: 4
   url: https://www.sqlite.org/index.html
   img: /static/img/technologies/sqlite.png  
@@ -178,7 +178,7 @@
   img: /static/img/technologies/typesafe.png  
 - name: Vagrant
   categories:
-    - Devops
+    - DevOps
   level: 3
   url: https://www.vagrantup.com/
   img: /static/img/technologies/vagrant.png
@@ -228,7 +228,7 @@
 - name: GNU Make
   categories:
     - Development
-    - Devops
+    - DevOps
     - CPP
   level: 4
   url: https://www.gnu.org/software/make/
@@ -270,7 +270,7 @@
   url: https://maven.apache.org/
   img: /static/img/technologies/maven.png
   categories:
-    - Devops
+    - DevOps
 - name: SBT
   level: 3
   url: https://www.scala-sbt.org/
@@ -291,7 +291,7 @@
   url: https://www.mysql.com/
   img: /static/img/technologies/mysqldb.png
   categories:
-    - DB
+    - BBDD
     - SQL
 - name: Zookeeper
   url: http://zookeeper.apache.org
@@ -341,7 +341,7 @@
   level: 1
   img: /static/img/technologies/aws.png
   categories:
-    - Devops
+    - DevOps
 - name: Windows
   url: https://windows.com
   level: 4
@@ -370,38 +370,52 @@
 #   url:
 #   img: /static/img/technologies/kubernetes.png
 #   categories:
-#     - Devops
+#     - DevOps
 - name: Elastic Search
   url: https://www.elastic.co/products/elasticsearch
   img: /static/img/technologies/elasticsearch.png
   categories:
     - Reactive Programming
-    - Devops
+    - DevOps
 - name: Logstash
   url: https://www.elastic.co/products/logstash
   img: /static/img/technologies/logstash.png
   categories:
     - Reactive Programming
-    - Devops
+    - DevOps
 - name: Kibana
   url: https://www.elastic.co/products/kibana
   img: /static/img/technologies/kibana.png
   categories:
     - Reactive Programming
-    - Devops
+    - DevOps
 # - name: Spark
 #   url:
 #   level: 0
 #   img: /static/img/technologies/spark.jpeg
 #   categories:
 #     - Reactive Programming
-# - name: MongoBD
-#   categories:
-#     - NoSQL
-#     - DB
-#   level: 1
-#   url: https://www.mongodb.com/es
-#   img: /static/img/technologies/mongodb.png  
+- name: MongoBD
+  categories:
+    - NoSQL
+    - BBDD
+  level: 2
+  url: https://www.mongodb.com/es
+  img: /static/img/technologies/mongodb.png  
+- name: Redis
+  categories:
+    - NoSQL
+    - BBDD
+  level: 2
+  url: https://redis.io/
+  img: /static/img/technologies/redis.png 
+- name: Cassandra
+  categories:
+    - NoSQL
+    - BBDD
+  level: 2
+  url:   http://cassandra.apache.org/
+  img: /static/img/technologies/cassandra.jpeg 
 - name: Go
   url: https://golang.org/
   level: 1
@@ -413,7 +427,7 @@
   level: 3
   categories:
     - REST
-    - Devops
+    - DevOps
   img: /static/img/technologies/nginx.png
 - name: Apache HTTP
   url: https://httpd.apache.org/
@@ -421,4 +435,4 @@
   level: 3
   categories:
     - REST
-    - Devops
+    - DevOps
