@@ -29,7 +29,12 @@ background: '/static/img/pano5.jpg'
 
 <div class="container">
   <div class="row">
-    <div class="col-6">
+      <div class="col-lg-6 mx-auto">
+          <h2 style="text-align: center">Travels</h2>
+          <p style="text-align: center">I have visited these {{site.data.travel.countries.size}} countries.</p>
+          {% include travels.html %}
+      </div>
+    <div class="col-lg-6">
             <h2 style="text-align: center">Gallery</h2>
             <div id="aboutme_carousel" class="carousel slide carousel-fade" 
             data-ride="carousel" style=" width:100%; height: 500px !important;">
@@ -58,11 +63,7 @@ background: '/static/img/pano5.jpg'
                     </a>
                   </div>
     </div>
-    <div class="col-6 mx-auto">
-        <h2 style="text-align: center">Travels</h2>
-        <p style="text-align: center">I have visited these {{site.data.travel.countries.size}} countries.</p>
-        {% include travels.html %}
-    </div>
+
   </div>
 </div>
 
