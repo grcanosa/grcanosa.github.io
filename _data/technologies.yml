@@ -44,6 +44,20 @@
   level: 3
   url: https://www.lightbend.com/akka
   img: /static/img/technologies/akka.png 
+- name: Akka Streams
+  categories:
+    - Reactive Programming
+    - Scala
+  level: 3
+  url: https://doc.akka.io/docs/akka/current/stream/index.html
+  img: /static/img/technologies/akkastreams.jpeg 
+- name: Alpakka
+  categories:
+    - Reactive Programming
+    - Scala
+  level: 3
+  url: https://doc.akka.io/docs/alpakka/current/index.html
+  img: /static/img/technologies/alpakka.png 
 - name: Slick
   categories:
     - Reactive Programming
@@ -122,13 +136,17 @@
     - Development
     - Reactive Programming
     - Scala              
-
 - name: Docker
   categories:
     - DevOps
   level: 4
   url: https://www.docker.com/
   img: /static/img/technologies/docker2.png  
+- name: Kubernetes
+  url:
+  img: /static/img/technologies/kubernetes.png
+  categories:
+    - DevOps
 - name: Git
   categories:
     - DevOps
@@ -449,13 +467,6 @@
 #   img: /static/img/technologies/spark.jpeg
 #   categories:
 #     - Reactive Programming
-
-- name: Go
-  url: https://golang.org/
-  level: 1
-  categories:
-    - Programming Languages
-  img: /static/img/technologies/golang.jpeg
 - name: NGINX
   url: https://www.nginx.com/
   level: 3
